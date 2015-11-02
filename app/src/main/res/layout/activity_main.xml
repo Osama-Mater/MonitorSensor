@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.SlidingPaneLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/panes"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <fragment
+        android:id="@+id/sensors"
+        android:name="osamamattar.monitorsensor.SensorsFragment"
+        android:layout_width="300sp"
+        android:layout_height="match_parent" />
+
+    <fragment
+        android:id="@+id/log"
+        android:name="osamamattar.monitorsensor.SensorLogFragment"
+        android:layout_width="400dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+
+</android.support.design.widget.SlidingPaneLayout>
